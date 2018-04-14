@@ -10,6 +10,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     ListView list;
+    public final String TAG  = "Logged";
     String[] drinks = {"Hunters", "Kibao", "KC", "Napoleon", "Tusker", "Whitecap","Johnie Walker", "Jack Daniels", "Jameson","Summit"};
 
     @Override
@@ -22,7 +23,8 @@ public class MainActivity extends AppCompatActivity {
          list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
              @Override
              public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                 Toast.makeText(MainActivity.this, "Your are drinking "+drinks[position], Toast.LENGTH_SHORT).show();
+                 
+//                 Toast.makeText(MainActivity.this, "Your are drinking "+drinks[position], Toast.LENGTH_SHORT).show();
              }
          });
 
